@@ -49,5 +49,5 @@ jobs:
             echo "${{ secrets.GITHUB_TOKEN }}" | docker login ghcr.io -u punsano26 --password-stdin
             docker rm -f ${{ env.CONTAINER_NAME }} || true
             docker pull ghcr.io/punsano26/my-bmi-app:${{ env.TAG_NAME }}
-            docker run --restart=always -d --pull always --name ${{ env.CONTAINER_NAME }} -p 5555:80 ghcr.io/punsano26/my-bmi-app:${{ env.TAG_NAME }}
+            docker run --restart=always -d --pull always --name ${{ env.CONTAINER_NAME }} -p 5026:80 ghcr.io/punsano26/my-bmi-app:${{ env.TAG_NAME }}
           EOF
