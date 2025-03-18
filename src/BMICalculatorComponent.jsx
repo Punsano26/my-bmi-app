@@ -19,7 +19,8 @@ function BMICalculatorComponent() {
 
   return (
     <div>
-      <h1>BMI Calculator</h1>
+      <h1>BMI Calculator 026 65/45</h1>
+      <p>Punsano26</p>
       <div>
         <label>Weight (kg):</label>
         <input
